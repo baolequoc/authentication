@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "start": "nodemon server.js",
+    "build": "babel server.js -d dist",
+    "dev": "node ./node_modules/node-dev/bin/node-dev server.js",
+    "test": "jest -i",
+    "migrate": "node ./src/v1/database/seeders/role.seeder.js && node ./src/v1/database/seeders/permission.seeder.js && node ./src/v1/database/seeders/permission_role.seeder.js"
+  },
+  "dependencies": {
+    "cookie-session": "^2.0.0",
+    "env": "^0.0.2",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "helmet": "^6.0.0",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0"
+  }
+}
