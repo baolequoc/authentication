@@ -10,8 +10,8 @@ const { verify } = require('crypto');
 const PORT = 3000;
 
 const config = {
-  CLIENT_ID: '425982821596-l2c683uo8ivvn2r3klbkjh110ura031u.apps.googleusercontent.com',
-  CLIENT_SECRET: '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',
+  CLIENT_ID: 'process.env.CLIENT_ID',
+  CLIENT_SECRET: 'process.env.CLIENT_SECRET',
   COOKIE_KEY_1: 'abc',
   COOKIE_KEY_2: 'dbf',
 }
